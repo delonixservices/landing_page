@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0075FF, #00D4FF);
+    color: #333;
+    overflow: hidden;
+}
+
+.thank-you-container {
+    text-align: center;
+    max-width: 400px;
+    background: #fff;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.checkmark-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.checkmark {
+    width: 80px;
+    height: 80px;
+    stroke: #22c55e;
+    stroke-width: 3;
+    stroke-linecap: round;
+    animation: drawCheckmark 0.6s ease forwards;
+}
+
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    animation: drawCircle 0.8s ease forwards;
+}
+
+.checkmark__check {
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #22c55e;
+    margin: 0.5em 0;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.back-btn {
+    background-color: #0075FF;
+    color: white;
+    border: none;
+    padding: 0.7em 1.5em;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #005BBB;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes drawCircle {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes drawCheckmark {
+    0% {
+        stroke-dashoffset: 48;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.checkmark__check {
+    stroke: #22c55e;  /* Add color to the checkmark */
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: drawCheckmark 0.6s ease 0.2s forwards; /* Add delay and forwards */
+}

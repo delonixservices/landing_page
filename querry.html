@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+
+.container {
+  margin: 0;
+}
+
+.navbar {
+  /* Additional styling for the navbar if needed */
+}
+
+.navbar-brand img {
+  width: 100px;
+  height: 50px;
+}
+
+.navbar-toggler {
+  /* Style for the mobile toggle button */
+}
+
+.navbar-toggler-icon {
+  /* Customize the icon if desired */
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  justify-content: space-around;
+  margin: 5px; /* Adjusts spacing between nav items */
+}
+
+.nav-link {
+  color: inherit; /* Matches with the text color if needed */
+}
+
+.sub-btn-white {
+  margin: 4px !important;
+  padding: 8px !important;
+  background-color: #4b0a511c;
+  border-radius: 8px !important;
+  border-color: #4b0a51 !important;
+  outline-color: #4b0a51!important;
+}
+
+.sub-btn-white:hover {
+  background-color: #610b68 !important;
+  color: white !important;
+}
+
+        /* Custom CSS */
+        .main-container {
+          position: relative;
+          background-image: url('bg.jpg');
+          background-size: cover;
+          background-position: center;
+          padding: 50px;
+          /* Adjust as needed */
+          color: white;
+          /* Set font color to white */
+        }
+    
+        .main-container::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+        }
+    
+        .main-container .row {
+          align-items: center;
+        }
+    
+        .main-container .col-md-6 {
+          padding: 0 20px;
+          /* Adjust as needed */
+        }
+    
+        .form-control {
+          background-color: rgba(255, 255, 255, 0.1);
+          /* Semi-transparent white background for form inputs */
+          color: white;
+          /* Set font color to white */
+        }
+    
+        /* Add shadow to the image */
+        .main-container img {
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+          /* Dark shadow */
+        }
+    
+        /* Adjust Font Awesome Icon Size for Mobile */
+        .nav-link i {
+          font-size: 1.5rem;
+        }
+    
+        .card-img-top {
+          height: 200px;
+          /* Adjust this value as needed */
+          object-fit: cover;
+        }
+    
+        button {
+          background-color: #563d7c;
+          padding :1vh;
+          border-radius: 2vh;
+          transition: background-color 0.3s ease, color 0.3s ease;
+          
+    
+    
+        }
+    
+        a{
+          color: #ffffff;
+            }
+         a:hover{
+          color: #74b3b7;
+          text-decoration: none;
+    
+        
+        
+        }
+        .half-width {
+      width: 100%;
+    }
+    .duration{
+      display: flex;
+      justify-content: space-between
+    }
+     .sub-btn {
+      padding: 8px !important;
+      border-radius: 32px !important;
+      margin: 0 !important;
+      background-color: #610b68 !important;
+      border-color: #4b0a51 !important;
+    } 
+    .sub-btn:hover{
+      background-color: #4b0a51 !important
+    }
+        
+        
+      </style>
+</head>
+<body>
+
+  <!-- nav bar  -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- Left side logo -->
+      <a class="navbar-brand" href="https://tripbazaar.in/">
+        <img src="tblogo.png" width="100" height="50" alt="Company Logo">
+      </a>
+  
+      <!-- Toggler button for mobile view -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav " >
+          <!-- Social Media Links -->
+          <li class="nav-item "  >
+            <a class=" nav-link " href="https://www.instagram.com/tripbazaar.in/"><img src="insta.svg" alt="" srcset=""> </a>
+          </li>
+          <li class="nav-item">
+            <a class=" nav-link " href="https://wa.me/7678105666"><img src="whatsapp.svg" alt="" srcset=""></a>
+          </li>
+          <li class="nav-item">
+            <a class=" nav-link " href="https://www.facebook.com/tripbazaar.in/"><img src="facebok.svg" alt=""></a>
+          </li>
+          <li class="nav-item" style="margin: 5px;">
+            <a class=" nav-link sub-btn-white btn" href="tel:+18008901245"><i class="fas fa-phone"></i> 18008901245</a>
+          </li>
+          <!-- Get Info Button -->
+          <li class="nav-item"style="margin: 5px;">
+            <a class=" nav-link sub-btn-white btn" href="https://wa.me/7678105666">Get Info</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid main-container">
+    <div class="row">
+      <!-- Left side image -->
+      <div class="col-md-6">
+        <img src="bg2.png" class="img-fluid half-width" alt="Company Image" style="content-visibility: f\;">
+      </div>
+      <!-- Right side form -->
+      <div class="col-md-6">
+        <h2>Calculate Your Trip Budget</h2>
+        <form method="post" id="sheetdb-form" action="https://sheetdb.io/api/v1/8s6imfq5cbqcj" onsubmit="redirectToThankYou(event)">
+          <div class="form-group">
+            <label for="destination">Destination:</label>
+            <input type="text" class="form-control" id="destination" name="destination" required>
+          </div>
+          <div class="form-group">
+            <label for="startCity">Start City:</label>
+            <input type="text" class="form-control" id="startCity" name="startCity" required>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="start-date">Start Date:</label>
+                <input type="date" class="form-control" id="start-date" name="start-date" required>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="return-date">Return Date:</label>
+                <input type="date" class="form-control" id="return-date" name="return-date" required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="passenger-adults">Adults:</label>
+                <input type="number" class="form-control" id="passenger-adults" name="passenger-adults" value="1" required>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="passenger-infants">Children:</label>
+                <input type="number" class="form-control" id="passenger-infants" name="passenger-infants" value="0" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" class="form-control" id="fullName" name="fullName" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <button type="submit" class="sub-btn btn btn-primary">Submit</button>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      alert('success')
+    });
+  });
+
+  </script>
+
+<script>
+  function redirectToThankYou(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Perform form submission here if needed, e.g., via AJAX, then redirect
+
+    // Redirect and use history API to mask the URL path
+    window.location.href = 'thankyou.html';
+    window.history.pushState({}, '', '/thankyou'); // Update URL to show only "/thankyou"
+  }
+</script>
+    
+</body>
+</html>
